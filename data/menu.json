@@ -1,0 +1,12 @@
+{
+  "restaurant": "DevOps Diner",
+  "tagline": "Shipped daily, deployed hourly",
+  "items": [
+    { "id": 1, "name": "Continuous Delivery Dumplings", "price": 8.5, "tag": "popular", "emoji": "🥟" },
+    { "id": 2, "name": "Kubernetes Khichdi", "price": 10.0, "tag": "veg", "emoji": "🍛" },
+    { "id": 3, "name": "Pipeline Pav Bhaji", "price": 7.25, "tag": "spicy", "emoji": "🍽️" },
+    { "id": 4, "name": "Blue-Green Burger", "price": 11.5, "tag": "popular", "emoji": "🍔" },
+    { "id": 5, "name": "Rollback Ramen", "price": 9.75, "tag": "chef special", "emoji": "🍜" },
+    { "id": 6, "name": "Container Canoli", "price": 5.0, "tag": "dessert", "emoji": "🍰" }
+  ]
+}

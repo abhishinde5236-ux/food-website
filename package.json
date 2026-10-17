@@ -1,0 +1,19 @@
+{
+  "name": "devops-practice-site",
+  "version": "1.0.0",
+  "description": "A small food website used as a playground for DevOps practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test/smoke.test.js",
+    "lint": "node --check server.js && node --check test/smoke.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "license": "MIT"
+}

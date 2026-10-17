@@ -1,0 +1,90 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #14141b;
+  color: #f4f4f5;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  background: #1c1c26;
+  border-bottom: 1px solid #2c2c3a;
+}
+
+.brand { font-size: 20px; font-weight: 700; }
+
+.status { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+
+.dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #f5a623;
+  transition: background 0.3s;
+}
+.dot.ok { background: #3ddc84; }
+.dot.down { background: #ff4d4f; }
+
+.version { opacity: 0.6; }
+
+.hero {
+  text-align: center;
+  padding: 80px 24px;
+  background: linear-gradient(135deg, #1f1f2e, #2a1f3d);
+}
+.hero h1 { font-size: 42px; margin-bottom: 14px; }
+.hero p { opacity: 0.75; margin-bottom: 26px; }
+
+.btn {
+  display: inline-block;
+  background: #ff6b35;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover { background: #ff8552; }
+
+.menu { padding: 60px 32px; max-width: 1000px; margin: 0 auto; }
+.menu h2 { text-align: center; margin-bottom: 32px; font-size: 28px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1c1c26;
+  border: 1px solid #2c2c3a;
+  border-radius: 12px;
+  padding: 22px;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.card:hover { transform: translateY(-4px); border-color: #ff6b35; }
+.card .emoji { font-size: 34px; }
+.card h3 { margin: 10px 0 6px; font-size: 17px; }
+.card .price { color: #3ddc84; font-weight: 700; }
+.card .tag {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  background: #2c2c3a;
+  padding: 4px 10px;
+  border-radius: 20px;
+  opacity: 0.85;
+}
+
+footer {
+  text-align: center;
+  padding: 26px;
+  font-size: 13px;
+  opacity: 0.55;
+  border-top: 1px solid #2c2c3a;
+}

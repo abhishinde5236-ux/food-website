@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Diner</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">🍔 DevOps Diner</div>
+    <div class="status">
+      <span id="health-dot" class="dot"></span>
+      <span id="health-text">checking...</span>
+      <span id="version" class="version"></span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Ship food like you ship code.</h1>
+    <p>A tiny food site built to practice Docker, CI/CD, monitoring and deployments.</p>
+    <a class="btn" href="#menu">View Menu</a>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Today's Menu</h2>
+    <div id="menu-grid" class="grid">
+      <p>Loading menu...</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Environment: <span id="env"></span> | Instance: <span id="instance"></span></p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
